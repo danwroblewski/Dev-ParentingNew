@@ -1,0 +1,39 @@
+div.pager-container {
+	margin: -267px 0 0 0;
+}
+
+#rotators #rotator-subad {
+	background: url('/img/subads/topic-backtoschool.gif') 0 0 no-repeat;
+	height: 88px;
+	width: 960px;
+}
+
+#rotators .rotator-ads {
+	background: none;
+	background: transparent;
+}
+
+#rotators .rotator-ads .each-ad {
+	background: none;
+	background-color: transparent !important;
+}
+
+#searchbrowseby .browse-holder {
+	display: block;
+}
+
+.highlight-box-home.iefix {
+	margin: 0;
+}
+.highlight-box-home {
+width: 100%;
+height: 167px;
+margin: 0px 0px 25px 0px;
+background: url('../img/box-home.gif') 0 0 no-repeat;
+}
+#footer {
+background: url('../img/tile-footer.gif') 0 0 repeat-x #f5f0e1;
+clear: both;
+width: 100%;
+padding-top: 25px;
+}

@@ -1,0 +1,1004 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201306 will be lost/reset.
+# Last config file used to build this data file was /home/ptnew/tmp/awstats/awstats.parentingnew.envoydev.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2016                
+POS_TIME 2691                
+POS_VISITOR 14261               
+POS_DAY 15003               
+POS_DOMAIN 3527                
+POS_LOGIN 3763                
+POS_ROBOT 3918                
+POS_WORMS 4174                
+POS_EMAILSENDER 4305                
+POS_EMAILRECEIVER 4448                
+POS_SESSION 15731               
+POS_SIDER 15938               
+POS_FILETYPES 4583                
+POS_DOWNLOADS 4912                
+POS_OS 5296                
+POS_BROWSER 5406                
+POS_SCREENSIZE 5814                
+POS_UNKNOWNREFERER 5888                
+POS_UNKNOWNREFERERBROWSER 5975                
+POS_ORIGIN 6057                
+POS_SEREFERRALS 6201                
+POS_PAGEREFS 6345                
+POS_SEARCHWORDS 6606                
+POS_KEYWORDS 6758                
+POS_MISC 2352                
+POS_ERRORS 6817                
+POS_CLUSTER 3619                
+POS_SIDER_404 7006                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20130701093620 1 0 11415378307001
+FirstTime 20130603110642
+LastTime 20130628174618
+LastUpdate 20130702081049 1 0 0 0 0
+TotalVisits 94                  
+TotalUnique 16                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 16                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 2067 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 0 0 0
+1 0 0 0 0 0 0
+2 0 0 0 0 1 4953
+3 0 0 0 0 0 0
+4 0 0 0 0 0 0
+5 10 103 90089 6 25 2294690
+6 12 65 276722 13 26 2697370
+7 52 359 3550901 22 47 5008532
+8 232 4566 17095204 29 102 9291005
+9 854 9656 41781788 159 296 54521423
+10 751 8675 49959945 346 532 83576371
+11 856 12126 116960097 257 683 26202931
+12 928 12377 102922857 268 1111 45762837
+13 431 7730 66787376 77 303 60933042
+14 625 8155 45464238 135 264 26142732
+15 1338 18404 143123936 232 1080 27345821
+16 1162 14807 107805926 415 1176 70267747
+17 843 8276 32561806 405 781 111847798
+18 52 372 2049298 56 123 9380761
+19 0 0 0 0 0 0
+20 5 82 999161 2 5 207643
+21 0 0 0 0 0 0
+22 61 721 6513543 48 100 60207629
+23 161 853 2163399 115 209 31424061
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+us 8373 107327 627209039
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 3
+no_user_agent 1749 626500896 20130626170347 0
+msnbot 14 48552 20130614231719 1
+bot[\s_+:,\.\;\/\\-] 2 5030 20130621230040 1
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 12
+css 20699 40568613 0 0
+eot 451 8615925 0 0
+mp3 22 112897247 0 0
+png 49386 262975381 0 0
+woff 1831 18274840 0 0
+json 46 1624687 0 0
+php 199 200951 0 0
+html 1404 7553540 0 0
+jpg 11585 116375916 0 0
+js 9755 8202550 0 0
+Unknown 4442 39907694 0 0
+gif 7507 10011695 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 6
+/sites/all/themes/parentingdotorg/media/083112_Bullying.mp3 3 0 0
+/robots.txt 2 0 20
+/sites/all/themes/parentingdotorg/media/083112_SchoolProgressAndAcademics.mp3 1 0 0
+/documents/reimers/SiblingRivalry.mp3 0 17 36531672
+/documents/reimers/ToddlerMeltdowns.mp3 0 9 29422880
+/documents/reimers/GettingYourChildToListen.mp3 0 17 46942695
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 6
+macosx 98902
+linuxandroid 57
+winxp 510
+winlong 2
+winvista 30
+win7 7869
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 21
+chrome27.0.1453.94 108
+safari7.0 54
+firefox21.0 8688
+safari6.0 1646
+chrome27.0.1453.110 53254
+opera9.80 191
+safari6.0.1 633
+safari5.1.7 67
+msie8.0 1991
+safari6.0.5 605
+chrome24.0.1312.56 120
+firefox10.0.4 306
+msie7.0 730
+chrome27.0.1453.93 27862
+safari5.1.8 1
+chrome27.0.1453.90 57
+msie10.0 2
+safari6.0.3 242
+msie9.0 2214
+chrome27.0.1453.116 8548
+safari 51
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 0
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 2844 2878
+From1 0 0
+From2 0 0
+From3 7 7
+From4 5522 104485
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 3
+http://nehcwd02:9095/Contact-Us/ 4 4
+http://www.facebook.com/l.php 2 2
+http://nehcwd02:9095/parenting-class/ 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 9
+403 6 18438
+206 59 318917
+400 2 1134
+406 10 200
+401 36 1835
+302 373 7240
+500 41 10437
+404 2301 71940
+301 31 11310
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 93
+/content/sites/default/files/iStock_000003511925Small_400.jpg 5 http://parentingnew.envoydev.com/search/search_submit
+/_js/jquery.colorbox.min.js 105 http://parentingnew.envoydev.com/
+/_js/boystown.js 104 http://parentingnew.envoydev.com/
+/content/api/tid 1 -
+/_css/reset.css 104 http://parentingnew.envoydev.com/
+/css/fontface.css 101 http://parentingnew.envoydev.com/
+/content/api/ask-an-expert 1 -
+/content/api/taxonomy_vocabularyhttp://parentingnew.envoydev.com/content/api/taxonomy_vocabulary/getTree 1 -
+/css/location-rotators.css 102 http://parentingnew.envoydev.com/
+/css/colorbox.css 103 http://parentingnew.envoydev.com/
+/content/sites/default/files/iStock_000008985845XSmall.jpg 6 http://parentingnew.envoydev.com/search/search_submit
+/_images/btn-donate-interior.png 2 http://parentingnew.envoydev.com/
+/search_submit 2 -
+/img/background-stats.jpg 3 http://parentingnew.envoydev.com/
+/content/sites/default/files/iStock_000015241731XSmall.jpg 6 http://parentingnew.envoydev.com/search/search_submit
+/_images/btn-enewssignup-foot.png 1 http://parentingnew.envoydev.com/
+/content/sites/default/files/iStock_000017770777XSmall_175.jpg 4 http://parentingnew.envoydev.com/search/search_submit
+/content/sites/default/files/iStock_000006328186Small_72.jpg 3 http://parentingnew.envoydev.com/search/search_submit
+/content/api/question_and_answer 1 -
+/content/sites/default/files/iStock_000009709469Large_200_0.jpg 11 http://parentingnew.envoydev.com/search/search_submit
+/content/sites/default/files/Fotolia_4280370_Subscription_L_400.jpg 18 http://parentingnew.envoydev.com/search/search_submit
+/content/api/articles.json 2 -
+/_images/btn-topbar-parenting.jpg 1 http://parentingnew.envoydev.com/
+/api/search 1 -
+/content/sites/default/files/iStock_000011226576XSmall_0.jpg 5 http://parentingnew.envoydev.com/search/search_submit
+/search 1 http://parentingnew.envoydev.com/
+/img/btn-stats-donate2.png 23 http://parentingnew.envoydev.com/
+/img/tile-brush-white7-nothere.png 82 http://parentingnew.envoydev.com/
+/content/sites/default/files/iStock_000000300775XSmall.jpg 6 http://parentingnew.envoydev.com/search/search_submit
+/content//api/tips-advice.json 5 -
+/content/api/taxonomy_vocabulary/9 2 -
+/content/sites/default/files/iStock_000016020546Small_250.jpg 2 http://parentingnew.envoydev.com/content/content/help-its-time-for-homework-0
+/content/sites/default/files/iStock_000012371160XSmall.jpg 2 http://parentingnew.envoydev.com/search/search_submit
+/content/sites/default/files/39-021_HelpTheresAToddlerInTheHouse_rgb_72.jpg 16 http://parentingnew.envoydev.com/search/search_submit
+/_images/btn-enewssignup.png 1 http://parentingnew.envoydev.com/
+/content/sites/default/files/87-088_youandmeagainstpee.png 18 http://parentingnew.envoydev.com/search/search_submit
+/content/article 1 -
+/home/search_submit 1 -
+/_js/jquery.cycle.all.js 105 http://parentingnew.envoydev.com/
+/content//api/news.json 5 -
+/_css/layout.css 105 http://parentingnew.envoydev.com/
+/_images/tile-footer.png 1 http://parentingnew.envoydev.com/
+/_css/skeleton.css 105 http://parentingnew.envoydev.com/
+/content/sites/default/files/iStock_000014650544XSmall.jpg 33 http://parentingnew.envoydev.com/search/search_submit
+/content/sites/default/files/mom-talking-to-toddler-girl_300.jpg 6 http://parentingnew.envoydev.com/search/search_submit
+/content/api/search_node/retrieve.json 258 -
+/img/background-stats-ipad-port.jpg 13 http://parentingnew.envoydev.com/
+/_js/jquery.cookie.js 105 http://parentingnew.envoydev.com/
+/img/background-stats2.jpg 23 http://parentingnew.envoydev.com/
+/content//api/blog_list.json 29 -
+/content/sites/default/files/Fotolia_2146913_Subscription_L_250.jpg 6 http://parentingnew.envoydev.com/search/search_submit
+/search/search_submit 1 http://parentingnew.envoydev.com/
+/content/sites/default/files/iStock_000015808635XSmall.jpg 6 http://parentingnew.envoydev.com/search/search_submit
+/content/api/askanexpert.json 2 -
+/_css/base.css 104 http://parentingnew.envoydev.com/
+/_images/tile-brush-white7-nothere.png 1 http://parentingnew.envoydev.com/
+/content/sites/default/files/iStock_000017495185Small_400.jpg 2 http://parentingnew.envoydev.com/content/content/top-10-tips-for-family-use-of-technology-and-media
+/content/sites/default/files/iStock_000016843955XSmall.jpg 2 http://parentingnew.envoydev.com/search/search_submit
+/_images/navigation-global.png 1 http://parentingnew.envoydev.com/
+/_images/tile-home-ad-area.png 1 http://parentingnew.envoydev.com/
+/_images/box-home2.png 1 http://parentingnew.envoydev.com/
+/content/sites/default/files/iStock_000016175233__250.jpg 2 http://parentingnew.envoydev.com/content/content/good-communication-helps-children-succeed-in-school
+/_images/background-stats-donate.jpg 1 http://parentingnew.envoydev.com/
+/content/sites/default/files/iStock_000009477020XSmall.jpg 11 http://parentingnew.envoydev.com/search/search_submit
+/content/api/search_node/ 1 -
+/_images/background-stats2.jpg 1 http://parentingnew.envoydev.com/
+/content/sites/default/files/iStock_000019102854XSmall.jpg 6 http://parentingnew.envoydev.com/search/search_submit
+/content/sites/default/files/iStock_000015468741XSmall.jpg 2 http://parentingnew.envoydev.com/content/content/time-out-guidelines-for-parents
+/content/sites/default/files/iStock_000006493749XSmall.jpg 18 http://parentingnew.envoydev.com/search/search_submit
+/content/api/question_and_answers 1 -
+/content/sites/default/files/iStock_000017146565XSmall.jpg 2 http://parentingnew.envoydev.com/content/content/study-skills-for-your-teen
+/_images/btn-topbar-donate.png 1 http://parentingnew.envoydev.com/
+/_images/btn-stats-donate2.png 1 http://parentingnew.envoydev.com/
+/content/sites/default/files/iStock_000010932493Small_72.jpg 4 http://parentingnew.envoydev.com/search/search_submit
+/_images/btn-topbar-boystown.jpg 1 http://parentingnew.envoydev.com/
+/content/api/taxonomy_vocabulary/getTree 2 -
+/content/api/articles_all.json 8 -
+/content/api/taxonomy_vocabulary/9/getTree 1 -
+/img/background-stats-donate.jpg 39 http://parentingnew.envoydev.com/
+/_images/btn-facebook-top.png 1 http://parentingnew.envoydev.com/
+/_js/jquery.pajinate.js 104 http://parentingnew.envoydev.com/
+/_images/tile-top2.png 1 http://parentingnew.envoydev.com/
+/css/..img/tile-boxhome.png 1 http://parentingnew.envoydev.com/
+/css/rotators.css 102 http://parentingnew.envoydev.com/
+/content/api/search_node 1 -
+/_images/tile.jpg 1 http://parentingnew.envoydev.com/
+/content/sites/default/files/iStock_000011521967XSmall.jpg 1 http://parentingnew.envoydev.com/search/search_submit
+/content/sites/default/files/iStock_000015711820XSmall.jpg 2 http://parentingnew.envoydev.com/search/search_submit
+/_css/fontface.css 104 http://parentingnew.envoydev.com/
+/_css/layout-in.css 105 http://parentingnew.envoydev.com/
+/content/api/search 1 -
+/content/sites/default/files/iStock_000003005275XSmall.jpg 6 http://parentingnew.envoydev.com/search/search_submit
+/content/structure/services 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 16
+98.175.192.188 7122 98435 528080809 20130628143829
+192.88.142.253 658 5270 60025683 20130628174618
+174.71.97.126 506 2769 25048748 20130618233122
+68.13.181.197 37 390 4088485 20130620143737
+174.19.92.137 10 121 2551122 20130619172725
+98.175.196.252 8 30 635672 20130614122538
+174.71.71.50 5 67 1312354 20130613221509
+24.252.4.37 4 60 1453446 20130627223353
+70.198.9.112 4 57 986379 20130621092405
+174.225.132.32 4 47 961096 20130619102108
+68.99.8.128 4 21 4434 20130616121717
+174.19.94.88 3 49 1083328 20130622220111
+70.198.4.203 3 47 963756 20130617164956
+157.55.253.115 2 2 7308 20130613120846
+98.168.238.95 2 2 40 20130613121812
+66.87.142.10 1 3 6379 20130607154813
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 24
+20130603 373 7786 30116536 3
+20130604 437 4879 8806531 2
+20130605 276 6407 18362117 3
+20130606 670 12158 37850971 4
+20130607 465 8269 30132457 3
+20130610 83 927 53950940 1
+20130611 331 4615 18655757 4
+20130612 803 10483 84394277 1
+20130613 937 14331 124364192 10
+20130614 585 6636 43551948 7
+20130615 213 904 31672742 1
+20130616 26 188 371225 2
+20130617 420 2281 64878960 6
+20130618 588 4044 25782256 3
+20130619 469 2850 21229204 7
+20130620 607 10284 74089882 4
+20130621 235 3729 21038985 7
+20130622 3 49 1083328 1
+20130623 0 1 20 0
+20130624 120 1013 11374788 5
+20130625 202 443 1361061 5
+20130626 317 4402 31355858 3
+20130627 12 172 2492320 7
+20130628 201 476 3189931 5
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 35
+5mn-15mn 1
+0s-30s 33
+15mn-30mn 5
+30s-2mn 8
+2mn-5mn 4
+30mn-1h 8
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 586
+/ 1325 6865289 58 21
+/css/SourceSansPro-Regular-webfont.woff 877 9222500 0 7
+/css/SourceSansPro-Bold-webfont.woff 599 5819730 0 6
+/search/search_submit 375 3957049 0 3
+/interior 318 1020325 3 2
+/our-experts 308 1110835 3 2
+/search/results 294 1526049 1 6
+/css/SourceSansPro-Light-webfont.woff 235 1618722 0 3
+/common-sense-parenting 205 794626 2 1
+/articles 185 3991068 2 3
+/guides 166 614457 3 2
+/movie/vimeo-album.php 125 97222 0 1
+/competing-with-character 123 465016 2 1
+/content/admin/content 120 932940 0 4
+/css/SourceSansPro-Black-webfont.woff 120 1613888 0 0
+/contentexample 110 428953 5 3
+/css/SourceSansPro-Bold-webfont.eot 94 1578120 0 3
+/css/SourceSansPro-Black-webfont.eot 94 1516500 0 0
+/css/SourceSansPro-Regular-webfont.eot 94 1586580 0 0
+/ask-an-expert 78 2613797 0 0
+/css/SourceSansPro-Light-webfont.eot 73 1312689 0 2
+/movie/vimeo-share.php 60 88388 0 2
+/content/node/add 57 157661 0 0
+/content/ 56 468457 2 0
+/julia-cook 47 265331 0 0
+/content/admin/structure/views/ajax/config-item/basic_page/services_1/filter/type 2 5387 0 0
+/content/search/node/new%20school%20year 1 6262 0 0
+/content/search/node/toddlers%2C%20parenting%20skills 2 11545 0 0
+/content/search/node/good%20study%20habits 1 5450 0 0
+/about-us 11 31586 2 0
+/zexamples/qandas 4 17225 0 0
+/content/node/943/edit 1 9746 0 0
+/content/node/355/edit 1 11094 0 0
+/our-experts/julia-cook/about 8 33287 0 0
+/content/content/what-every-parent-needs-to-know-about-%E2%80%9Cno%E2%80%9D 1 5405 0 0
+/content/admin/structure/types/manage/ask-an-expert/fields 1 6427 0 0
+/content/search/node/abuse%2C%20toddlers%20type%3Aarticle 1 4574 0 0
+/article/school-progress-academics-podcast 2 7676 0 0
+/content/admin/structure/views/ajax/config-item/vocabulary/services_1/field/vid 5 20606 0 0
+/content/content/teaching-non-aggressive-ways-to-deal-with-frustration 2 10469 0 0
+/ask-an-expert/teen-son-in-band-parents-concerned-about-lyrics 1 158 0 0
+/content/admin/structure/views/ajax/display/ask_an_expert/services_1/display_title 2 4237 0 0
+/ask-a-question 1 20 0 0
+/search 5 100 0 0
+/content/node/964/edit 1 9218 0 0
+/content/node/72/edit 1 10532 0 0
+/content/admin/config/development/maintenance 4 14149 0 0
+/content/node/972/edit 1 6879 0 0
+/content/search/node/toilet 1 6051 0 0
+/content/admin/structure/views/ajax/config-item/common_sense_parenting/services_1/field/alias 5 21173 0 0
+/content/api/taxonomy_vocabulary 4 2128 0 0
+/content/api/vocabulary.json 2 3224 0 0
+/content/search/node/study%20skills 1 5723 0 0
+/content/content/good-communication-helps-children-succeed-in-school 2 9942 0 0
+/content/content/study-skills-for-your-teen 2 10652 0 0
+/juliacook 1 20 0 0
+/content/admin/structure/types/manage/videos/fields/field_video_author 1 4761 0 0
+/content/node/982/edit 1 6687 0 0
+/content/admin/structure/types 27 87845 0 0
+/article/parenting-resolutions-for-the-new-year 1 4937 0 0
+/experts 36 102892 2 1
+/content/search/node/potty%20training 4 22153 0 0
+/content/content/common-sense-parenting-0 2 11060 0 0
+/content/content/im-not-going-to-take-anymore 2 11338 0 0
+/content/admin/structure/views/ajax/config-item/common_sense_parenting/services_1/field/body 3 12839 0 0
+/content/admin/structure/views/view/article/preview/services_1/ajax 19 380878 0 0
+/content/admin/config/people 1 2696 0 0
+/content/node/963/edit 1 7613 0 0
+/content/admin/structure/views/ajax/config-item/our_experts/services_1/field/field_expert_profile_image 1 3536 0 0
+/content/admin/structure/views/ajax/display/competing_with_character/services_1/title 2 4249 0 0
+/content/admin/structure/views/ajax/display/vocabulary/services_1/pager 2 4651 0 0
+/our-experts/connie-schnoes 3 13924 0 0
+/content/node/736/edit 1 10229 0 0
+/content/node 15 189334 0 0
+/content/admin/structure/views/ajax/display/common_sense_parenting/page/row_options 1 3229 0 0
+/content/search/node/abuse%2Cdrugs%20type%3Aarticle 1 4559 0 0
+/content/admin/structure/views/view/common_sense_parenting/edit/services_1 3 20532 0 0
+/content/search/node/school%20progress 1 6220 0 0
+/content/content/teaching-respect-for-self-and-others 2 9466 0 0
+/content/content/sad-or-depressed-with-relationship-issues 1 4399 0 0
+/content/search/node/quick%20tips%20parents 2 9624 0 0
+/content/node/add/cspitem 1 5950 0 0
+/ourexperts 1 20 0 0
+/content/search/node/aggressive%20behavior 1 12047 0 0
+/content/node/888/edit 1 9865 0 0
+/content/node/738/edit 1 10818 0 0
+/content/admin/structure/views/ajax/display/basic_page/services_1/path 2 4042 0 0
+/articles/understanding-bullying 16 455 1 0
+/content/batch 4 5625 0 0
+/zexamples/contentexample 1 20 0 0
+/content/search/node/potty%20training%2C%20childhood%20development 1 5603 0 0
+/content/admin/structure/types/manage/experts/fields/field_expert_profile_image 1 6076 0 0
+/content/file/ajax/field_expert_profile_image/und/0/form-0b2jkDqXjEuHVylmUd31D1Ig32fchsmqvWcDDJmUB78 1 1004 0 0
+/content/admin/people/permissions 3 557187 0 0
+/content/content/bring-common-sense-parenting-to-your-community 1 5733 0 0
+/ask-an-expert/determining-potty-training-readiness 1 158 0 0
+/content/node/30/edit 1 13945 0 0
+/content/node/76/edit 1 10356 0 0
+/content/content/coach-kush-in-action 1 4939 0 0
+/css/SourceSansPro-BlackIt-webfont.eot 12 323652 0 0
+/content/content/helping-children-succeed-in-school-0 2 9795 0 0
+/common-sense-parenting/locations 16 67484 0 0
+/content/content/technology-and-media-resources-for-parents 2 9125 0 0
+/content/search/node/fighting%20siblings 1 5120 0 0
+/our-experts/patrick-friman 3 13218 0 0
+/content/content/top-10-tips-for-family-use-of-technology-and-media 2 10304 0 0
+/content/api/quick_tips 1 3663 0 0
+/content/content/bullying-podcast 1 5189 0 0
+/content/admin/structure/taxonomy/ask%20an%20expert/display 1 4120 0 0
+/content/content/seventeen-year-old-son-dating-13-year-old 1 4884 0 0
+/content/node/953/edit 2 12706 0 0
+/content/node/83/edit 1 10378 0 0
+/content/api/search_node/retrieve 15 972671 0 0
+/content/content/competing-with-character-book 1 6354 0 0
+/content/node/add/experts 7 44452 0 0
+/content/admin/structure/views/view/common_sense_parenting/preview/services_1/ajax 27 39940 0 0
+/content/admin/structure/types/manage/videos 1 6461 0 0
+/ask-an-expert/child-skips-school-might-be-using-drugs 2 40 0 0
+/content/node/347/edit 1 14135 0 0
+/content/admin/reports/status 2 8573 0 0
+/content/content/discovery-years-through-taking-flight-discipline 2 16778 0 0
+/content/node/804/edit 1 10232 0 0
+/content/admin/structure/taxonomy/quick_tips 1 3853 0 0
+/content/admin/structure/views/ajax/config-item/article/services_1/field/body 6 29653 0 0
+/content/content/refuses-school 1 4279 0 0
+/content/search/node/techno%20tots 1 4804 0 0
+/content/admin/structure/views/ajax/rearrange/article/services_1/field 2 5100 0 0
+/our-experts/julia-cook 15 95117 0 0
+/content/admin/structure/views/view/vocabulary/preview/default/ajax 2 4667 0 0
+/content/api/node/945 1 1620 0 0
+/content/authorize.php 9 9023 0 0
+/content/search/node/balancing%20technology 2 9481 0 0
+/content/node/add/videos 9 75335 0 0
+/content/search/node/toilet%2C%20toddlers 1 4886 0 0
+/content/api/askanexpert 2 153047 0 0
+/content/content/aggressive-behavior-in-6-year-old 2 11671 0 1
+/img/ 4 6848 1 1
+/cwc. 1 20 0 0
+/content/taxonomy/term/620/edit 1 6477 0 0
+/content/content/partner-with-boys-town 1 5231 0 0
+/common-sense-parenting/parent-testimonials 3 15209 0 0
+/content/node/851/edit 1 9291 0 0
+/content/admin/structure/views/view/competing_with_character/edit 2 13798 0 0
+/content/content/are-you-helping-or-hurting-your-teens-school-work 2 9455 0 0
+/content/content/questions-to-consider-when-hiring-a-tutor 2 10066 0 0
+/content/node/107/edit 1 11100 0 0
+/css/SourceSansPro-ExtraLightIt-webfont.eot 12 333600 0 1
+/ask-an-expert/when-to-utilize-professional-counseling 1 158 0 0
+/content/admin/structure/types/manage/ask-an-expert/fields/field_ask_expert_taxonomy 1 6893 0 0
+/content/node/779/edit 1 10022 0 0
+/content/search/node/abuse%2C%20test%20type%3Aarticle 1 4345 0 0
+/content/admin/config/people/accounts/fields 1 5680 0 0
+/content/admin/structure/views/ajax/config-item/quick_tips/services_1/field/field_quick_tips 1 8425 0 0
+/content/node/747/edit 3 29782 0 0
+/content/node/989/edit 1 6640 0 0
+/content/node/985/edit 1 6704 0 0
+/content/content/webcasts 1 3730 0 0
+/questions-and-answers 29 1362735 1 1
+/common-sense-parenting/classes/la-crianza-practics-de-los-hijos 7 30010 0 0
+/content/api/article.json 9 447535 0 0
+/content/content/common-sense-parenting-research-proven 2 11259 0 0
+/content/node/935/edit 1 10432 0 0
+/content/users/admin 2 7192 0 0
+/content/admin/structure/views/ajax/config-item/article/services_1/filter/tid_1 1 3134 0 0
+/content/node/211/edit 1 10732 0 0
+/content/content/getting-out-of-bed 1 4399 0 0
+/qandas 21 75025 0 0
+/content/search/node/staying%20calm 1 6978 0 0
+/content/admin/structure/views/ajax/add-item/article/services_1/field 3 17681 0 0
+/content/admin/structure/views/ajax/config-item/our_experts/services_1/filter/type 2 5120 0 0
+/content/node/304/edit 1 11817 0 0
+/content/content/addressing-problem-behavior-effectively 2 12371 0 0
+/content/search/node/sex 1 6604 0 0
+/content/search/node/Type%3Aarticle 1 3480 0 1
+/content/content/common-sense-parenting-locations 1 5960 0 0
+/content/admin/structure/views/view/vocabulary/edit/services_1 3 19761 0 0
+/article/the-art-of-making-friends 2 40 0 0
+/content/content/common-sense-parenting-parent-testimonials 1 5815 0 0
+/content/api/taxonomy_vocabulary/9 2 512 0 0
+/content/search/node/questions%20on%20drugs 1 3762 0 0
+/content/admin/structure/views/view/our_experts/edit 4 26968 0 0
+/content/admin/structure/taxonomy/ask%20an%20expert/add 6 39253 0 0
+/content/search/node/10%20tips 1 5663 0 0
+/content/node/384/edit 1 9946 0 0
+/content/admin/structure/views/ajax/display/quick_tips/services_1/display_title 2 4246 0 0
+/content/node/835/edit 1 9585 0 0
+/kush 1 20 0 0
+/competing-with-character/supporting-materials 2 9164 0 0
+/article/compete-with-character-and-every-game-will-be-a-victory 1 4738 0 0
+/content/admin/structure/taxonomy/tags 1 3378 0 0
+/content/node/980/edit 1 6689 0 0
+/content/api/node/607 2 2974 0 0
+/content/search/node/sibling%20rivalry 3 13812 0 0
+/content/admin/structure/views/ajax/display/quick_tips/services_1/path 2 4170 0 0
+/content/api/vocabulary 33 36841 0 0
+/content/content/julia-cook 3 20298 0 0
+/content/search/node 1 3123 0 0
+/content/admin/structure/views/ajax/config-item/ask_an_expert/services_1/field/body 3 14860 0 0
+/content/content/parenting-children-with-adhd 2 9045 0 0
+/content/user 4 11261 0 0
+/content/admin/structure/views/ajax/config-item/common_sense_parenting/services_1/field/php 1 7987 0 0
+/articles/ 1 55698 0 0
+/content/admin/structure/views/ajax/add-item/common_sense_parenting/services_1/field 4 26538 0 0
+/content/admin/structure/views/view/ask_an_expert/preview/services_1/ajax 14 314504 0 0
+/content/admin/reports 2 5999 0 0
+/content/search/node/questions%20on%20drugs%20type%3Aarticle 2 6734 0 0
+/content/search/node/poty 1 4302 0 0
+/content/admin/structure/views/ajax/display/vocabulary/services_1/pager_options 3 8430 0 0
+/competing-with-character/videos 2 8146 0 0
+/content/node/817/edit 1 10009 0 0
+/content/admin/structure/types/manage/experts/fields 5 30017 0 0
+/content/content/thomas-m-reimers-phd 1 6230 0 0
+/content/admin/structure/views/ajax/rearrange/common_sense_parenting/services_1/field 6 14631 0 0
+/content/admin/structure/views/ajax/add-item/vocabulary/services_1/filter 4 15642 0 0
+/content/admin/config/people/accounts/display 1 4197 0 0
+/article/make-family-mealtime-more-enjoyable 1 20 0 0
+/content/node/521/edit 1 6372 0 0
+/content/content/time-out-guidelines-for-parents 2 16438 0 0
+/content/node/add/page 6 34992 0 0
+/content/admin/structure/views/ajax/config-item/vocabulary/services_1/filter/vid 10 29661 0 0
+/content/admin/structure/views/ajax/config-item/competing_with_character/services_1/filter/type 2 5403 0 0
+/content/node/983/edit 1 6646 0 0
+/ask-an-expert/how-to-help-a-teenager-develop-healthy-relationships 2 178 0 0
+/article/getting-beyond-the-glare-of-adhd 1 4735 0 0
+/content/node/31/edit 1 11278 0 0
+/schnoes 20 80984 1 2
+/shnoes 1 20 0 0
+/content/node/add/competing-with-character 4 23473 0 0
+/content/node/197/edit 1 11254 0 0
+/content/content/back-to-school-tips-for-parents 1 4247 0 0
+/content/admin/structure/views/ajax/display/our_experts/services_1/path 2 3840 0 0
+/css/SourceSansPro-ExtraLight-webfont.eot 12 302280 0 0
+/videos 4 80 0 1
+/common-sense-parenting/bring_common_sense_parenting_to_your_community 3 11515 0 0
+/content/content/game-systems-not-just-for-playing-games 2 11445 0 0
+/article/listen-and-learn 1 20 0 0
+/content/search/node/media%20resources 1 5516 0 0
+/content/admin/config 9 36126 0 0
+/content/node/774/edit 2 22095 0 0
+/questions-and-answers/three-year-old-acting-out 1 5188 0 0
+/article/responsibility-part-iii 1 5340 0 0
+/common-sense-parenting/classes 33 114082 0 0
+/content/node/978/edit 1 10114 0 0
+/content/article/abuse 1 4798 0 0
+/content/admin/structure/views/ajax/rearrange/quick_tips/services_1/field 4 10032 0 0
+/our-experts/thomas-reimers 5 29488 0 0
+/content/api/node/950.json 1 1833 0 0
+/common-sense-parenting/bring-common-sense-parenting-to-your-community 2 9030 0 0
+/content/admin/structure/views/view/basic_page/edit 2 13714 0 0
+/content/node/949/edit 4 42857 0 0
+/article/what-every-parent-needs-to-know-about-no 2 9414 0 0
+/content/content/helping-your-child-settle-arguments-and-disputes 2 11487 0 0
+/content/admin/structure/taxonomy/add 1 3439 0 0
+/content/search/node/quality%20time 1 7407 0 0
+/content/admin/config/development/performance 3 11226 0 0
+/content/admin/structure/views/view/common_sense_parenting/edit/page 1 6931 0 0
+/content/content/unwanted-touching 1 4289 0 0
+/content/admin/structure/types/manage/quick-tips/fields/field_quick_tips 1 4682 0 0
+/content/node/722/edit 1 10584 0 0
+/content/search/node/overloaded 1 4635 0 0
+/content/admin/config/user-interface/shortcut/shortcut-set-1/add-link 1 3277 0 0
+/content/content/children-ages-6-16 1 5412 0 0
+/newsletter-confirmation 7 21405 0 0
+/adhd 6 21521 0 0
+/content/admin/structure/taxonomy/books 1 4605 0 0
+/css/SourceSansPro-It-webfont.eot 12 335676 0 2
+/common-sense-parenting/ 11 42173 0 0
+/common-sense-parenting/research-proven 5 14447 0 0
+/content/admin/config/user-interface/shortcut/shortcut-set-1 2 9026 0 0
+/css/SourceSansPro-Semibold-webfont.eot 12 317616 0 1
+/content/admin/structure/types/manage/videos/fields/field_video_tags/field-settings 1 3707 0 0
+/content/node/986/edit 1 6808 0 0
+/ask-an-expert/my-3-year-old-takes-her-clothes-off-in-front-of-others 2 178 0 0
+/content/admin/structure/views/view/ask_an_expert/clone 1 3470 0 0
+/content/node/849/edit 1 9813 0 0
+/disclaimer 6 20580 0 0
+/content/admin/structure/views/ajax/display/common_sense_parenting/services_1/path 2 4029 0 0
+/content/user/3/edit 2 19327 0 0
+/common-sense-parenting/classes/common-sense-parenting/classes/children-ages-6-16 7 29723 0 0
+/content/admin/structure/taxonomy/video%20files 1 3288 0 0
+/content/api/questions_and_answers 3 229530 0 0
+/css/SourceSansPro-BoldIt-webfont.eot 12 334416 0 0
+/content/content/checking-on-your-childs-school-progress-0 2 10486 0 0
+/content/api/taxonomy_vocabulary/getTree 7 497 0 0
+/content/node/726/edit 2 21802 0 0
+/content/api/taxonomy_term/350 1 310 0 0
+/content/search/node/technology%20use 1 6437 0 0
+/content/admin/structure/types/manage/common-sense-parenting/fields 2 11978 0 0
+/common-sense-parenting/locations/common-sense-parenting 2 10200 0 0
+/questions-and-answers/how-to-help-a-teenager-change-his-negative-attitude 1 4419 0 1
+/competing-with-character/competing-with-character-book 1 20 0 0
+/content/search/node/Who%E2%80%99s%20on%20First%3F%20Giving%20Kids%20Their%20Fair%20Share%20of%20Attention 1 4547 0 0
+/search-results 2 40 0 0
+/content/admin/structure/views/view/common_sense_parenting/clone 3 10256 0 0
+/content/admin/structure/views/view/location/delete 1 3144 0 0
+/common-sense-parenting/research_proven 2 9960 0 0
+/content/search/node/time%20out%20guidelines 1 6077 0 0
+/competing-with-character/the-book 2 10756 0 0
+/zexamples/interior 1 4317 0 0
+/content/admin/structure/views/ajax/display/basic_page/services_1/display_title 2 4123 0 0
+/content/search/node/game%20system 1 4991 0 0
+/content/admin/structure/views/view/our_experts/preview/services_1/ajax 10 13319 0 0
+/common-sense-parenting/locations/agencies-companies-and-organizations 3 14925 0 0
+/content/admin/structure/views/view/common_sense_parenting/edit 11 75927 0 0
+/questions-and-answers/what-to-do-when-a-first-grader-chooses-bad-friends 6 26143 0 0
+/content/content/dr-patrick-friman-phd 2 9502 0 0
+/common-sense-parenting/common-sense-parenting-research-proven 14 625 0 0
+/article/sex-drugs-and-daughters 45 881904 0 2
+/content/search/node/tutor 1 4828 0 0
+/content/api/taxonomy_term/607.json 1 231 0 0
+/content/content/balancing-technology-and-media 4 22488 0 0
+/content/content/whos-on-first-giving-kids-their-fair-share-of-attention 1 6820 0 0
+/questions-and-answers/when-to-utilize-professional-counseling 1 4958 0 0
+/content/admin/config/media/file-system 1 3542 0 0
+/content/node/951/edit 3 29572 0 0
+/content/api/taxonomy_term/607 3 948 0 0
+/content/admin/structure/views/ajax/display/vocabulary/services_1/path 4 7412 0 0
+/content/node/856/edit 1 10382 0 0
+/content/search/node/social%20skills 1 13755 0 0
+/content/admin/structure/types/manage/quick-tips/fields/field_quick_tip_taxonomy 1 4727 0 0
+/content/node/205/edit 1 10547 0 0
+/content/content/social-skills 1 5489 0 0
+/content/admin/structure/menu/parents 9 621 0 0
+/content/node/add/quick-tips 11 64129 0 0
+/ask-an-expert/how-to-help-a-teenager-change-his-negative-attitude 1 20 0 0
+/content/admin/structure/services/list/parenting 6 63538 0 0
+/questions-and-answers/my-3-year-old-takes-her-clothes-off-in-front-of-others 18 47864 0 0
+/content/admin/structure/services/list/parenting/authentication 3 27258 0 0
+/content/admin/structure/views/ajax/config-item/vocabulary/services_1/field/term_node_tid 1 3407 0 0
+/content/node/202/edit 1 10835 0 0
+/content/content/parents-find-staying-calm-is-key-to-curbing-kids-poor-behavior 2 9364 0 0
+/content/admin/structure/types/manage/quick-tips/fields 11 66720 0 0
+/content/admin/structure/types/manage/experts 1 6449 0 0
+/content/taxonomy/term/53/edit 1 6475 0 0
+/content/admin/structure/types/manage/ask-an-expert 1 6487 0 0
+/content/api/node/951 1 4368 0 0
+/content/search/node/abuse%2C%20drugs%20type%3Aarticle%2Cask_an_expert 1 6021 0 0
+/questions-and-answers/child-skips-school-might-be-using-drugs 6 19760 0 0
+/julia-cook/about 7 26055 0 0
+/content/content/texts-tweets-and-tv-how-much-is-too-much 2 10049 0 0
+/national-hotline 37 64742 1 0
+/content/content/common-sense-parenting-classes 2 10176 0 0
+/content/admin/structure/taxonomy/quick_tips/edit 1 3583 0 0
+/content/content/techno-tots 2 11318 0 0
+/content/content/psa-videos 1 3736 0 0
+/content/admin/structure/types/manage/quick-tips/fields/field_quick_tips_body 1 4700 0 0
+/content/content/learning-to-hold-their-tongues 1 4420 0 0
+/guides/media-and-parenting 6 120 0 0
+/content/node/927/edit 1 9651 0 0
+/content/admin/config/system/backup_migrate/export/advanced 3 17962 0 0
+/article/does-my-child-have-adhd 1 4804 0 0
+/content/admin/structure/taxonomy/ask%20an%20expert/fields 1 5667 0 0
+/content/system/ajax 30 42149 0 0
+/content/node/200/edit 1 10587 0 0
+/content/search/node/abuse%20type%3Aarticle 1 5886 0 0
+/content/content/quick-tips-for-parents 3 13463 0 0
+/article/help-your-child-love-to-learn 14 59776 0 0
+/content/content/national-hotline 1 4776 0 0
+/content/taxonomy/term/625/edit 2 9593 0 0
+/content/admin/modules 9 110337 0 0
+/reimers/about 5 6868 0 0
+/content/content/refusing-to-go-to-school 1 4321 0 0
+/psas 6 19237 0 0
+/content/node/750/edit 2 19408 0 0
+/common-sense-parenting/resources 12 49074 0 0
+/content/content/common-sense-parenting-resources 1 5879 0 0
+/content/admin/structure/views/view/article/edit 13 90879 0 0
+/content/admin/structure/taxonomy/quick_tips/add 3 13177 0 0
+/content/taxonomy/term/325/edit 1 6465 0 0
+/content/admin/structure/views/view/vocabulary/preview/services_1/ajax 40 118577 0 0
+/article/bullying-podcast 5 11633 0 1
+/topic 1 20 0 0
+/content/admin/appearance 1 4076 0 0
+/about/our-history 1 20 0 0
+/content/api/node/953 1 1052 0 0
+/content/search/node/good%20communication 1 9657 0 0
+/content/admin/structure/types/manage/videos/fields/field_video_id/field-settings 2 7081 0 0
+/content/content/hitting-habits 1 4364 0 0
+/content/admin/structure/views/view/competing_with_character/preview/services_1/ajax 5 7551 0 0
+/content/node/769/edit 1 9758 0 0
+/questions-and-answers/helping-older-children-learn-to-sleep-alone 1 4348 0 0
+/content/node/926/edit 1 9960 0 0
+/content/node/add/csp-location 1 5839 0 0
+/content/admin/structure/views/ajax/config-item/vocabulary/services_1/filter/tid 1 2959 0 0
+/questions_and_answers 1 59698 0 0
+/content/search/node/time-out 1 9155 0 0
+/content/search/node/questions%20on%20drugs%20type%3Aask_an_expert 1 3790 0 0
+/content/admin/update/ready 2 6227 0 0
+/content/admin/structure 43 128541 0 0
+/content/search/node/Apples%20type%3Aarticle 1 3417 0 0
+/content/search/node/date 3 19586 0 0
+/content/node/add/common-sense-parenting 11 64520 0 0
+/article/understanding-bullying 33 78510 0 1
+/content/content/toddlers-and-preschoolers 1 5473 0 0
+/content/search/node/computers 1 6040 0 0
+/content/admin/structure/types/add 6 38735 0 0
+/content/content/setting-a-good-example 2 10323 0 0
+/buddenberg 11 44355 0 0
+/content/node/737/edit 1 11092 0 0
+/content/api 19 2508 0 0
+/content/admin/structure/types/manage/experts/fields/field_expert_profile_image/field-settings 1 4047 0 0
+/content/admin/structure/views/ajax/display/our_experts/services_1/title 2 4016 0 0
+/content/search/node/playing%20games 1 8233 0 0
+/common-sense-parenting/research 1 20 0 0
+/content/admin/structure/views/view/cspitem/delete 1 3149 0 0
+/content/node/987/edit 1 6895 0 0
+/competing-with-character/classes 4 17108 0 0
+/content/content/help-its-time-for-homework-0 2 12199 0 0
+/content/node/961/edit 1 7148 0 0
+/content/admin/structure/views/ajax/config-item-extra/vocabulary/services_1/filter/tid 1 4683 0 0
+/content/node/144/edit 1 11331 0 0
+/content/admin/structure/types/manage/quick-tips/fields/field_quick_tips_body/field-settings 1 3447 0 0
+/content/node/729/edit 1 9612 0 0
+/content/admin/structure/views/ajax/config-item/common_sense_parenting/services_1/field/nid 1 9322 0 0
+/content/api/common_sense_parenting 10 16937 0 0
+/content/node/784/edit 1 9198 0 0
+/content/search/node/potty 1 5963 0 0
+/content/api/node/608 1 1459 0 0
+/content/file/ajax/field_expert_profile_image/und/0/form-8PiZ5EL9n9w1okpTl9XLaDi9dabaEVVq15MYNVbI-Ts 1 1000 0 0
+/content/admin/structure/taxonomy/ask%20an%20expert/edit 4 14258 0 0
+/content/node/775/edit 1 11017 0 0
+/common-sense-parenting/classes/toddlers-and-preschoolers 8 30393 0 0
+/content/admin/structure/views/ajax/display/competing_with_character/services_1/path 2 4067 0 0
+/content/admin/structure/views/ajax/config-item/quick_tips/services_1/field/php 6 31411 0 0
+/content/search/node/backpack 1 4866 0 0
+/content/admin/structure/views/view/vocabulary 2 12758 0 0
+/css/ 3 2187 0 0
+/content/node/223/edit 1 10691 0 0
+/friman 7 26632 0 0
+/content/node/104/edit 1 10521 0 0
+/content/api/node/952 2 3110 0 0
+/content/content/cutting-or-self-mutilation 1 4432 0 0
+/article/sorry-i-forgot-to-ask 1 20 0 0
+/content/admin/structure/views/view/quick_tips/edit 5 34986 0 0
+/content/search/node/helping%20children%20succeed%20in%20school 1 4669 0 0
+/article/pediatric-health 1 20 0 0
+/content/content/video-games-and-children 3 15926 0 0
+/content/node/918/edit 1 9468 0 0
+/content/search/node/not%20going%20to%20take%20anymore 1 5082 0 0
+/content/content/connie-schnoes-phd 1 5096 0 0
+/content/admin/help/search 1 4296 0 0
+/content/admin/structure/types/manage/quick-tips/fields/field_quick_tips/field-settings 1 3429 0 0
+/content/admin/config/people/accounts 2 13539 0 0
+/content/node/952/edit 4 27111 0 0
+/articles/sex-drugs-and-daughters 1 20 0 0
+/ask-an-expert/2013/03/21/how-handle-child 4 80 0 0
+/our-experts/thomas-reimers/about 6 22567 0 0
+/csp 13 3881 0 0
+/ask-an-expert/teens-tight-clothes-and-texting 1 20 0 0
+/content/admin/structure/types/manage/videos/fields/field_video_tags 2 13892 0 0
+/content/node/171/edit 1 10292 0 0
+/content/search/node/problem%20behavior 1 14519 0 0
+/content/users/editor 1 3599 0 0
+/content/admin/structure/types/manage/quick-tips/fields/body/delete 1 3357 0 0
+/content/node/837/edit 1 9356 0 0
+/content/search/node/common%20sense 1 8497 0 0
+/content/admin/structure/views/ajax/config-item/quick_tips/services_1/field/php_1 3 13853 0 0
+/content/admin/structure/taxonomy/article 28 251752 0 0
+/content/admin/structure/services 31 170635 0 0
+/content/search/node/are%20you%20helping%20your%20hurting 1 4876 0 0
+/content/node/783/edit 1 9391 0 0
+/content/search/node/helping%20children%20succeed%20in%20schol 1 4634 0 0
+/content/search/node/social%20sills 1 4411 0 0
+/content/search/node/teaching%20respect 1 6188 0 0
+/content/admin/structure/types/manage/videos/fields/field_video_author/field-settings 1 3580 0 0
+/content/search/node/settle%20arguments 1 4595 0 0
+/riemers 1 20 0 0
+/content/api/node/989 1 1072 0 1
+/content/search/node/abuse%2C%20drugs%20type%3Aarticle 1 4734 0 0
+/content/search/node/Apples 1 3852 0 0
+/article/myths-about-adhd 1 4692 0 0
+/our-experts/coach-kush 7 34603 0 0
+/content/admin/structure/views/view/quick_tips/preview/services_1/ajax 19 115359 0 0
+/content/admin/structure/views/ajax/add-item/our_experts/services_1/field 2 13175 0 0
+/content/node/843/edit 1 9573 0 0
+/guides/bullying 3 60 0 0
+/content/admin/structure/services/list/parenting/server 6 62580 0 0
+/content/content/overloaded-school-backpacks-often-cause-aches-and-pains 2 9649 0 0
+/content/admin/structure/types/manage/csp-location/delete 1 3274 0 0
+/content/admin/reports/updates/update 4 13588 0 0
+/content/node/966/edit 1 8156 0 0
+/content/admin/config/search/settings 3 14300 0 0
+/content/admin/structure/views/ajax/config-item/quick_tips/services_1/field/field_quick_tips_body 1 3640 0 0
+/content/content/la-crianza-practics-de-los-hijos 1 5040 0 0
+/content/admin/structure/views/ajax/config-item/vocabulary/services_1/field/name 2 8397 0 0
+/content/content/help-your-kids-succeed-in-school-with-good-study-habits-0 2 9710 0 0
+/content/admin/structure/taxonomy/guide/edit 1 3411 0 0
+/ask-an-expert/teenage-daughter-lying 1 158 0 0
+/article/drug-abuse-0 1 20 0 0
+/content/admin/structure/types/manage/videos/fields/field_video_id/widget-type 1 3444 0 0
+/content/admin/structure/views/ajax/display/ask_an_expert/services_1/path 2 4173 0 0
+/bt-book/competing-with-character 1 20 0 0
+/content/node/988/edit 1 6905 0 0
+/content/node/68/edit 3 30362 0 0
+/content/node/968/edit 2 13499 0 0
+/content/admin/structure/views/ajax/config-item/quick_tips/services_1/filter/type 2 5436 0 0
+/content/search/node/taking%20flight 1 5038 0 0
+/content/update.php 5 6318 0 0
+/content/search/node/abuse 3 5938 0 0
+/content/node/977/edit 1 10055 0 0
+/content/admin/structure/views/view/common_sense_parenting/preview/page/ajax 5 10728 0 0
+/content/node/984/edit 1 6719 0 0
+/content/admin/structure/types/manage/videos/fields 12 74587 0 0
+/article/cleanliness-0 1 20 0 0
+/content/admin/structure/services/list/parenting/resources 34 419919 0 0
+/content/content/top-5-strategies-for-parents-on-managing-kids-technology-use 2 9591 0 0
+/zexamples 4 18431 0 0
+/content/admin/people 2 30668 0 0
+/article/article/understanding-bullying 1 20 0 0
+/content/admin/structure/views/view/basic_page/preview/services_1/ajax 6 9028 0 0
+/our-experts/laura-buddenberg 4 18273 0 0
+/ask-an-expert/potty-training-troubles-with-4-year-old 4 218 0 1
+/content/api/taxonomy_term 9 6273 0 0
+/article/discovery-years-through-taking-flight-discipline 1 7872 0 0
+/content/admin/structure/types/manage/cspitem/delete 1 3275 0 0
+/user 1 20 1 0
+/content/admin/structure/taxonomy/ask%20an%20expert 16 143089 0 1
+/content/content/fighting-siblings 2 10390 0 0
+/article/starting-toilet-training-the-7-p-plan 1 154 0 0
+/content/admin/structure/views/view/ask_an_expert/edit 10 69492 0 0
+/content/admin/structure/views/view/vocabulary/edit 5 33176 0 0
+/content/search/node/non-agressive%20ways 1 4607 0 0
+/content/content/game-over-what-to-do-when-technology-takes-over-quality-time 2 10937 0 0
+/content/search/node/aggressive%20ways 1 7303 0 0
+/article/breath-holding-spells 1 20 0 0
+/content/admin/structure/views/view/common_sense_parenting 2 13779 0 0
+/content/content/supporting-materials 1 5463 0 0
+/content/content/banish-bullying 1 5361 0 0
+/content/admin/structure/views/ajax/add-item/vocabulary/services_1/field 7 39899 0 0
+/content/node/100/edit 1 11314 0 0
+/content/content/preparing-for-a-new-school-year-adjusting-to-school 2 9867 0 0
+/content/api/taxonomy_term/ 2 1394 0 0
+/ask-an-expert/slamming-the-door-on-the-gateway-drug-marijuana 1 20 0 0
+/content/content/school-progress-academics-podcast 1 5253 0 0
+/reimers 11 59297 0 0
+/content/admin/structure/views/ajax/config-item/vocabulary/services_1/field/nid 1 3391 0 0
+/content/admin/structure/views/ajax/config-item/article/services_1/field/alias 4 18126 0 0
+/content/admin/structure/views/ajax/add-item/quick_tips/services_1/field 4 28625 0 0
+/content/admin/structure/views 42 231432 1 0
+/common-sense-parenting/classes/children-ages-6-16 5 13739 0 0
+/content/content/laura-buddenberg 2 9815 1 1
+/content/admin/structure/views/ajax/display/common_sense_parenting/page/row_plugin 2 5723 0 0
+/content/admin/structure/types/manage/quick-tips/fields/field_quick_tip_taxonomy/field-settings 1 3751 0 0
+/content/api/search_node/retrieve.json 33 1171864 0 0
+/content/api/article 27 7767174 1 0
+/content/node/789/edit 1 9543 0 0
+/content/content/skipping-class-and-smoking-marijuana 1 4347 0 0
+/content/node/219/edit 1 11821 0 0
+/content/content/competing-with-character-0 1 5497 0 0
+/national-hotline/resources 2 3623 0 0
+/content/node/981/edit 1 6887 0 0
+/content/taxonomy/term/523/edit 1 6529 0 0
+/css/SourceSansPro-LightIt-webfont.eot 12 339900 0 0
+/article/ 2 111494 0 0
+/content/search/node/drugs 16 88507 0 0
+/content/node/788/edit 1 9844 0 0
+/content/node/938/edit 1 9522 0 0
+/content/admin/structure/taxonomy/bt%20press%20books 1 4129 0 0
+/content/admin/structure/types/manage/videos/fields/field_video_id 6 28337 0 0
+/content/search/node/video%20game 1 5946 0 0
+/content/search/node/text 1 5973 0 0
+/content/admin/structure/views/add 3 16796 0 0
+/content/admin/structure/taxonomy/article/add 11 73533 0 0
+/compete-with-character 5 100 0 0
+/content/search/node/homework 1 9548 0 0
+/content/admin/structure/views/ajax/display/basic_page/services_1/title 2 4223 0 0
+/css/SourceSansPro-SemiboldIt-webfont.eot 12 334896 0 0
+/cwc 5 100 0 1
+/content/content/kids-and-computers 2 10841 0 0
+/content/admin/structure/taxonomy/article/edit 1 3562 0 0
+/content/admin/structure/types/manage/article/fields 1 6460 0 0
+/content/content/angry-outbursts 1 4287 0 0
+/article/wait-before-you-begin-toilet-training 2 40 0 0
+/content/search/node/video%20games 1 7428 0 0
+/content/admin/structure/taxonomy/audio%20files 1 3291 0 0
+/content/node/471/edit 1 10787 0 0
+/content/admin/structure/views/ajax/edit-details/ask_an_expert 2 1504 0 0
+/topics 1 20 0 0
+/content/admin/config/system/backup_migrate 3 10572 0 0
+/content/node/add/article 2 19071 0 0
+/content/admin/structure/taxonomy 30 127691 0 0
+/article 20 931073 0 0
+/content/search/node/articles%20on%20potty%20training 1 3362 0 0
+/content/search/node/abuse%2C%20toddlers%20type%3Aarticle%2Cask_an_expert 1 4589 0 0
+/content/content/coach-kevin-kush-ma 1 5381 0 0
+/content/api/our_experts 1 463 0 0
+END_SIDER

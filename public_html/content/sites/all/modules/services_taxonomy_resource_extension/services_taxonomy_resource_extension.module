@@ -1,0 +1,255 @@
+<?php
+/**
+ * @file
+ * Extend taxonomy resource for services.
+ */
+
+/**
+ * Implements hook_services_authentication_info().
+ */
+function services_taxonomy_resource_extension_services_authentication_info() {
+  return array(
+    'title' => 'Vocabulary restriction',
+    'description' => 'Restrict requests to specific vocabulary.',
+    'authenticate_call' => 'services_taxonomy_resource_extension_authenticate',
+    'security_settings' => 'services_taxonomy_resource_extension_settings_form',
+  );
+}
+
+/**
+ * Apply authentication rules.
+ */
+function services_taxonomy_resource_extension_authenticate() {
+  $args = func_get_args();
+  // Ensure we have settings.
+  if (empty($args[0]['vocabularies']) || !is_array($args[0]['vocabularies'])) {
+    // No settings, so allow access.
+    return services_error('Access to all vocabularies is prohibeted.', 401);
+  }
+  // Build available vocabularies.
+  $available_vocabs = array_filter($args[0]['vocabularies']);
+  // Check taxonomy resource request.
+  switch ($args[1]['callback']) {
+    case '_taxonomy_term_resource_retrieve':
+    case '_taxonomy_term_resource_delete':
+    case '_taxonomy_term_resource_update':
+      $tid = $args[2][0];
+      $term = taxonomy_term_load($tid);
+      if (empty($term)) {
+        return services_error('Taxonomy term not found.', 404);
+      }
+      elseif (!in_array($term->vid, $available_vocabs)) {
+        return services_error('Vocabulary is restricted.', 401);
+      }
+      break;
+    case '_taxonomy_term_resource_create':
+      $vid = (!empty($args[2][0]['vid'])) ? (int)$args[2][0]['vid'] : 0;
+      if (!in_array($vid, $available_vocabs)) {
+        return services_error('Vocabulary is restricted.', 401);
+      }
+      break;
+  }
+  return FALSE;
+}
+
+/**
+ * Build form for authentication settings.
+ */
+function services_taxonomy_resource_extension_settings_form($settings) {
+  $form = array();
+  // Get available vocabularies.
+  $result = db_query('SELECT * FROM {taxonomy_vocabulary} ORDER BY name ASC');
+  $options = array();
+  foreach ($result as $record) {
+    $options[$record->vid] = $record->name;
+  }
+  $form['vocabularies'] = array(
+    '#type' => 'checkboxes',
+    '#multiple' => TRUE,
+    '#options' => $options,
+    '#default_value' => (is_array($settings['vocabularies'])) ? $settings['vocabularies'] : array(),
+  );
+  return $form;
+}
+
+/**
+ * Implements hook_services_resources().
+ */
+function services_taxonomy_resource_extension_services_resources() {
+  return array(
+    'taxonomy_term' => array(
+      'actions' => array(
+        'search_term' => array(
+          'help' => t('Search vocabularies for a taxonomy term.'),
+          'callback' => 'services_taxonomy_resource_extension_term_search',
+          'args' => array(
+            array(
+              'name' => 'data',
+              'optional' => FALSE,
+              'source' => 'data',
+              'type' => 'array',
+              'description' => t('POST data for search.'),
+            ),
+          ),
+          'access callback' => 'services_taxonomy_resource_extension_taxonomy_access',
+        ),
+      ),
+    ),
+    'taxonomy_vocabulary' => array(
+      'actions' => array(
+        'getlist' => array(
+          'help' => t('Retrieve a list of all available vocabularies.'),
+          'callback' => 'services_taxonomy_resource_extension_get_vocabularies',
+          'args' => array(
+            array(
+              'name' => 'vocab',
+              'optional' => TRUE,
+              'source' => array('data' => 'name'),
+              'type' => 'string',
+              'description' => t('Vocabulary name'),
+            ),
+          ),
+          'access callback' => 'services_taxonomy_resource_extension_taxonomy_access',
+        ),
+      ),
+    ),
+  );
+}
+
+/**
+ * Access callback for extension resources.
+ */
+function services_taxonomy_resource_extension_taxonomy_access() {
+  if (user_access('administer taxonomy') || user_access('get taxonomy tree')) {
+    return TRUE;
+  }
+  return FALSE;
+}
+
+/**
+ * Get all available vocabularies.
+ *
+ * @param $vocab string
+ *   Optional, vocabulary name to get id for.
+ *
+ * @return array
+ *   Response content.
+ */
+function services_taxonomy_resource_extension_get_vocabularies($vocab) {
+  $vid_restrict = array();
+  // Load in all the available Services endpoints.
+  $endpoints = services_endpoint_load_all();
+  // Traverse the endpoints list until we find the active one.
+  foreach ($endpoints as $ep) {
+    if (preg_match('/' . preg_quote($ep->path) . '/', $_SERVER['REQUEST_URI'])) {
+      // Check for VID authentication restriction.
+      if (array_key_exists('services_taxonomy_resource_extension', $ep->authentication) && array_key_exists('vocabularies', $ep->authentication['services_taxonomy_resource_extension'])) {
+        // Construct a list of valid vocabularies.
+        $vid_restrict = array_filter($ep->authentication['services_taxonomy_resource_extension']['vocabularies']);
+        if (empty($vid_restrict)) {
+          return array();
+        }
+      }
+      break;
+    }
+  }
+  $args = array();
+  $query = 'SELECT * FROM {taxonomy_vocabulary}';
+  // Add VID restriction
+  if (!empty($vid_restrict)) {
+    $query .= ' WHERE vid IN (:vid_restrict)';
+    $args[':vid_restrict'] = $vid_restrict;
+  }
+  // Add vocabulary name value
+  if (!empty($vocab)) {
+    $query .= ((!empty($vid_restrict)) ? ' AND' : ' WHERE') . ' name = :name';
+    $args[':name'] = $vocab;
+  }
+  // Get vocabularies from db.
+  $result = db_query($query, $args);
+  // Build response array.
+  $response = array();
+  foreach ($result as $record) {
+    $response[] = array(
+      'vid' => $record->vid,
+      'name' => $record->name,
+    );
+  }
+  return $response;
+}
+
+/**
+ * Search for taxonomy term.
+ *
+ * @param $data array
+ *   POST array for search request.
+ *
+ * @return array
+ *   Response content.
+ */
+function services_taxonomy_resource_extension_term_search($data) {
+  // Check term is in post data.
+  if (empty($data['term'])) {
+    return array();
+  }
+  $vid_restrict = array();
+  // Load in all the available Services endpoints.
+  $endpoints = services_endpoint_load_all();
+  // Traverse the endpoints list until we find the active one.
+  foreach ($endpoints as $ep) {
+    if (preg_match('/' . preg_quote($ep->path) . '/', $_SERVER['REQUEST_URI'])) {
+      // Check for VID authentication restriction.
+      if (array_key_exists('services_taxonomy_resource_extension', $ep->authentication) && array_key_exists('vocabularies', $ep->authentication['services_taxonomy_resource_extension'])) {
+        // Construct a list of valid vocabularies.
+        $vid_restrict = array_filter($ep->authentication['services_taxonomy_resource_extension']['vocabularies']);
+        if (empty($vid_restrict)) {
+          return array();
+        }
+      }
+      break;
+    }
+  }
+  // Build search sql.
+  $query = 'SELECT t.*, p.tid AS ptid, p.name AS pname FROM {taxonomy_term_data} AS t
+    JOIN {taxonomy_term_hierarchy} AS h ON t.tid = h.tid
+    LEFT JOIN {taxonomy_term_data} AS p ON h.parent = p.tid
+    WHERE t.name LIKE :tname';
+  $args = array(':tname' => $data['term'] . ((empty($data['exact_match'])) ? '%' : ''));
+  // Add VID authentication restriction
+  if (!empty($vid_restrict)) {
+    $query .= ' AND t.vid IN (:vid_restrict)';
+    $args[':vid_restrict'] = $vid_restrict;
+  }
+  // Add parent restriction.
+  if (isset($data['parent']) && trim($data['parent']) != '') {
+    // Check for numeric value.
+    if (is_numeric($data['parent'])) {
+      $query .= ' AND p.tid = :ptid';
+      $args[':ptid'] = (int) $data['parent'];
+    }
+    else {
+      $query .= ' AND p.name LIKE :pname';
+      $args[':pname'] = $data['parent'] . ((empty($data['exact_match'])) ? '%' : '');
+    }
+  }
+  // Add VID restriction.
+  if (!empty($data['vid'])) {
+    $query .= ' AND t.vid = :tvid';
+    $args[':tvid'] = (int) $data['vid'];
+  }
+  // Build response.
+  $response = array();
+  $result = db_query($query, $args);
+  foreach ($result as $record) {
+    $response[] = array(
+      'vid' => $record->vid,
+      'tid' => $record->tid,
+      'term' => $record->name,
+      'parent' => array(
+        'tid' => $record->ptid,
+        'term' => $record->pname,
+      ),
+    );
+  }
+  return $response;
+}

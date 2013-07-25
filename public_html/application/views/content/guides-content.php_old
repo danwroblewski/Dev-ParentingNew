@@ -1,0 +1,57 @@
+<!-- =========================== CONTENT =========================== -->
+<div class="container">
+	<div class="sixteen contentcolumn columns alpha omega">
+		
+		<div class="sixteen landcsp columns alpha omega">
+				<div class="landhead">GUIDES</div>
+				<h1>Parenting Can Be Tough.<br />
+				We Can Help</h1>
+				<div class="landingbintwo">
+					Parents learn logical strategies and proven methods developed by Boys Town.
+					<a href="#" class="btn-landreadmore"><span>Read More</span></a>
+				</div>
+				<div class="landingbintwo">
+					Common Sense Parenting<sup>&reg;</sup> offers a variety of classes to help parents succeed.
+					<a href="#" class="btn-landseeclasses"><span>See Classes</span></a>
+				</div>
+		</div>
+		<div class="landing-top-container-long csp">
+				<h1>Parenting Can Be Tough. We Can Help</h1>
+				<p>Parents learn logical strategies and proven methods developed by Boys Town.<br /><a href="#" class="btn-landreadmore"><span>Read More</span></a>
+				</p>
+				<p>Common Sense Parenting<sup>&reg;</sup> offers a variety of classes to help parents succeed.<br /><a href="#" class="btn-landseeclasses"><span>See Classes</span></a></p>
+		</div>
+		
+		<div class="two-thirds incontent column">
+			
+			<h1 style="margin-top:25px;"><?php echo $item->title; ?></h1>
+			
+			<?php print $printemail; ?>
+
+
+
+			<div class="content">
+				<?php echo $item->body->und[0]->value; ?>
+			</div>
+			
+		</div><!-- end two-thirds incontent column -->
+		
+		<div class="one-third landingright column">
+		    <div id="navigation-back">
+		    	<div class="secondary">
+		    		<ul class="landing">
+					<?php foreach($list as $item):
+					$url_alias = explode("/",$item->views_url_alias_node_alias);
+					?>
+		    			<li><a href="/category/<?php echo $tag; ?>"><?php echo $item->node_title;?></a></li>
+		    			<?php endforeach; ?>		
+		    		</ul>
+		    	</div>
+		    </div>
+		    <br clear="all">
+		    <div align="center"><a href="#" class="btn-hotline"><span>Hotline</span></a></div>
+		    <br clear="all">
+		</div>
+
+	</div>
+</div>

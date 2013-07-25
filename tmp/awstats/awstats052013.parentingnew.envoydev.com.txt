@@ -1,0 +1,392 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201305 will be lost/reset.
+# Last config file used to build this data file was /home/ptnew/tmp/awstats/awstats.parentingnew.envoydev.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2016                
+POS_TIME 2688                
+POS_VISITOR 7490                
+POS_DAY 7610                
+POS_DOMAIN 3276                
+POS_LOGIN 3508                
+POS_ROBOT 3663                
+POS_WORMS 3795                
+POS_EMAILSENDER 3926                
+POS_EMAILRECEIVER 4069                
+POS_SESSION 7721                
+POS_SIDER 7897                
+POS_FILETYPES 4204                
+POS_DOWNLOADS 4421                
+POS_OS 4469                
+POS_BROWSER 4527                
+POS_SCREENSIZE 4622                
+POS_UNKNOWNREFERER 4696                
+POS_UNKNOWNREFERERBROWSER 4783                
+POS_ORIGIN 4865                
+POS_SEREFERRALS 5004                
+POS_PAGEREFS 5148                
+POS_SEARCHWORDS 5296                
+POS_KEYWORDS 5448                
+POS_MISC 2352                
+POS_ERRORS 5507                
+POS_CLUSTER 3364                
+POS_SIDER_404 5646                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20130603110642 1 0 11058234260065
+FirstTime 20130530095622
+LastTime 20130531172951
+LastUpdate 20130604080322 1 0 0 0 0
+TotalVisits 6                   
+TotalUnique 1                   
+MonthHostsKnown 0                   
+MonthHostsUnknown 1                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 2 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 0 0 0
+1 0 0 0 0 0 0
+2 0 0 0 0 0 0
+3 0 0 0 0 0 0
+4 0 0 0 0 0 0
+5 0 0 0 0 0 0
+6 0 0 0 0 0 0
+7 0 0 0 0 0 0
+8 0 0 0 0 0 0
+9 1 1 396 0 1 0
+10 7 24 173480 4 14 5849
+11 103 325 6254709 19 33 1341
+12 278 399 15077901 32 72 17956
+13 18 83 1571122 6 10 4745
+14 52 118 2281284 25 61 3537
+15 98 175 1900115 36 145 0
+16 35 85 2837129 11 115 447
+17 41 84 3544517 1 54 447
+18 4 4 195878 0 0 0
+19 0 0 0 0 0 0
+20 0 0 0 0 0 0
+21 0 0 0 0 0 0
+22 0 0 0 0 0 0
+23 0 0 0 0 0 0
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+us 637 1298 33836531
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 8
+css 395 1180843 0 0
+png 80 82637 0 0
+json 62 5274939 0 0
+php 23 221298 0 0
+html 38 353651 0 0
+js 182 1132423 0 0
+Unknown 514 25581279 0 0
+gif 4 9461 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 2
+macosx 1297
+win7 1
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 2
+chrome27.0.1453.94 1
+chrome27.0.1453.93 1297
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 0
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 179 179
+From1 0 0
+From2 0 0
+From3 0 0
+From4 458 1119
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 6
+401 2 0
+302 76 0
+500 12 14211
+406 10 0
+404 150 15576
+301 6 2235
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 30
+/content/api/node/396 1 -
+/content/api/taxonomy_term 3 -
+/content/api/taxonomy_vocabulary/9/getList 1 -
+/content/api/taxonomy_vocabulary/retrieve/getlist 1 -
+/content/api/taxonomy_vocabulary/9 2 -
+/_js/jquery.colorbox.min.js 11 http://parentingnew.envoydev.com/
+/content/api/taxonomy_vocabulary/9/getlist 2 -
+/content/api/taxonomy_vocabulary/9/getTree 1 -
+/content/api/taxonomy_vocabulary/getTree/9 3 -
+/content/api/taxonomy/retrieve 1 -
+/_js/boystown.js 11 http://parentingnew.envoydev.com/
+/content/api/taxonomy/retrieve/getTree 1 -
+/css/fontface.css 11 http://parentingnew.envoydev.com/
+/_js/jquery.pajinate.js 11 http://parentingnew.envoydev.com/
+/css/location-rotators.css 11 http://parentingnew.envoydev.com/
+/css/colorbox.css 11 http://parentingnew.envoydev.com/
+/_js/jquery.cycle.all.js 11 http://parentingnew.envoydev.com/
+/content/api/taxonomy_terms/gettree 1 -
+/content/node/self-abuse-and-abuse-towards-others 1 -
+/content/api/node/self-abuse-and-abuse-towards-others 1 -
+/content/api/taxonomy_vocabulary 2 -
+/content/api/taxonomy_vocabulary/getTree/=9 1 -
+/css/rotators.css 11 http://parentingnew.envoydev.com/
+/css/layout-in.css 11 http://parentingnew.envoydev.com/
+/css/reset.css 11 http://parentingnew.envoydev.com/
+/content/api/taxonomy_vocabulary/retrieve/getTree 2 -
+/content/sites/default/files/iStock_000009709469Large_200_0.jpg 1 http://parentingnew.envoydev.com/content/content/what-to-do-when-a-parent-leaves
+/cont 1 -
+/_js/jquery.cookie.js 11 http://parentingnew.envoydev.com/
+/content/api/taxonomy_terms 3 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 1
+98.175.192.188 637 1298 33836531 20130531172951
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 2
+20130530 562 1141 28114280 3
+20130531 75 157 5722251 3
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 4
+1h+ 3
+5mn-15mn 1
+2mn-5mn 1
+15mn-30mn 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 119
+/content/admin/structure/views/view/ask_an_expert/preview/services_1/ajax 51 4351825 0 0
+/content/admin/structure/views/view/article/preview/services_1/ajax 44 6853603 0 0
+/content/api/article.json 37 4376887 0 1
+/ 27 93007 3 2
+/content/admin/structure/views/view/ask_an_expert/edit 21 799073 0 0
+/content/admin/structure/views 19 827276 2 1
+/content/admin/structure/services/list/parenting/resources 19 1309870 0 0
+/content/api/askanexpert.json 18 165659 0 0
+/content/admin/structure/views/view/article/edit 18 703252 0 0
+/content/admin/structure/views/ajax/config-item/ask_an_expert/services_1/field/php 17 768898 0 0
+/content/admin/structure 16 148699 0 0
+/content/admin/modules 16 1744038 0 0
+/content/api/taxonomy_term 15 50640 0 0
+/content/install.php 15 191049 0 0
+/content/admin/structure/types 13 139607 0 0
+/content/admin/structure/views/ajax/config-item/article/services_1/field/php 13 634038 0 0
+/content/admin/structure/views/ajax/config-item/article/services_1/filter/tid 12 374657 0 0
+/content/api/taxonomy_vocabulary 11 27507 0 0
+/content/admin/structure/views/ajax/config-item/article/services_1/filter/tid_1 10 217471 0 0
+/content/ 10 260587 1 0
+/content/admin/structure/views/ajax/config-item/ask_an_expert/services_1/filter/tid 10 327966 0 0
+/content/admin/structure/views/ajax/add-item/ask_an_expert/services_1/field 10 647456 0 0
+/content/admin/content 9 541981 0 0
+/content/admin/structure/services 9 135504 0 0
+/content/api/taxonomy_vocabulary/9 8 3856 0 0
+/content/admin/people 1 25366 0 0
+/content/search/node/toddlers%20type%3Aarticle%2Cask_an_expert%20toddlers 1 28845 0 0
+/content/api/taxonomy_term/gettree 1 57 0 0
+/content/admin/config 1 13337 0 0
+/content/admin/structure/taxonomy/ask%20an%20expert 2 158437 0 1
+/content/content/my-3-year-old-takes-her-clothes-off-in-front-of-others 3 63129 0 0
+/content/taxonomy/term/325/edit 1 27136 0 0
+/content/api/taxonomy_term/getList 1 57 0 0
+/content/api/taxonomy_vocabulary/getList 3 171 0 0
+/content/search/node/abuse%20type%3Aarticle%2Cask_an_expert 1 30114 0 0
+/content/overlay-ajax/page_top 1 4275 0 0
+/content/admin/appearance 1 13767 0 0
+/content/api/taxonomy_vocabulary/getlist 1 57 0 0
+/content/content/thirteen-year-old-boy-accused-of-abusing-younger-girl 1 20578 0 0
+/content/node/add 1 11259 0 0
+/content/api/taxonomy_term/retrieve 3 171 0 0
+/content/admin/structure/views/ajax/add-item/article/services_1/field 4 278362 0 0
+/content/article/abuse 1 22295 0 0
+/content/admin/structure/types/manage/ask-an-expert/fields 5 172545 0 0
+/content/admin/structure/views/ajax/config-item/ask_an_expert/services_1/field/nid 1 36232 0 0
+/content/admin/structure/views/ajax/config-item/ask_an_expert/services_1/field/alias 3 120159 0 0
+/content/search/node/abuse%20sex%20type%3Aarticle%2Cask_an_expert 1 23911 0 0
+/content/admin/structure/types/manage/page/fields 1 27711 0 0
+/content/api/taxonomy_term/257 1 730 0 0
+/content/api/taxonomy_vocabulary/article 1 57 0 0
+/content/admin/structure/types/manage/btbook/fields 1 29363 0 0
+/content/api/node/396 2 24112 0 0
+/content/api/taxonomy_term/607 2 1454 0 0
+/content/api/taxonomy_term/267%2C265 1 57 0 0
+/content/api/search_node/retrieve 1 172922 0 0
+/content/api/taxonomy_term/9 3 171 0 0
+/content/admin/config/search/clean-urls/check 3 45 0 0
+/content/admin/structure/views/ajax/config-item/article/services_1/field/alias 4 161193 0 0
+/content/admin/structure/taxonomy/books 1 27892 0 0
+/content/content/what-to-do-when-a-parent-leaves 2 43567 0 0
+/content/admin/structure/taxonomy/article 4 354043 0 0
+/content/admin/structure/menu/parents 1 66 0 0
+/content/search/node/abouse 1 21967 0 0
+/content/search/node/abuse%20sex 1 23496 0 0
+/content/api/search_node/retrieve.json 6 728695 0 0
+/content/api/taxonomy_vocabulary/getTree=9 1 57 0 0
+/content/admin/structure/taxonomy/locations 1 23759 0 0
+/content/api/taxonomy_vocabulary/retrieve/ 1 57 0 0
+/content/api/article 1 292977 0 0
+/content/admin/structure/views/ajax/config-item-extra/article/services_1/filter/tid 1 42996 0 0
+/content/admin/structure/views/ajax/config-item-extra/article/services_1/filter/tid_1 1 44025 0 0
+/content/api/taxonomy_term.json 1 3698 0 0
+/content/node/945/devel/render 1 165475 0 0
+/content/admin/structure/views/ajax/add-item/article/services_1/filter 6 292541 0 0
+/content/api/taxonomy_vocabulary/abuse 1 57 0 0
+/content/admin/structure/views/ajax/config-item/ask_an_expert/services_1/field/body 1 36082 0 0
+/content/authorize.php 8 30249 0 0
+/content/admin/modules/install 4 26292 0 0
+/content/search/node/drugs%20type%3Aarticle 1 27423 0 0
+/content/api/askanexpert 1 233878 0 0
+/content/search/node/drugs%20type%3Aarticle%2Cask_an_expert 1 28818 0 0
+/content/admin/structure/views/ajax/display/ask_an_expert/services_1/pager 2 38183 0 0
+/content/ask-an-expert/abuse 4 141916 0 0
+/content/search/node/drugs%20type%3Aarticle%2Cask_an_expert%20toddlers 1 19925 0 0
+/content/admin/structure/taxonomy/video%20files 1 13048 0 0
+/content/search/node/drugs 2 59169 0 0
+/content/api/taxonomy_term/getlist 1 57 0 0
+/content/content/self-abuse-and-abuse-towards-others 3 210787 0 0
+/content/api/taxonomy_term/267,265 2 114 0 0
+/content/admin/structure/types/manage/ask-an-expert 1 26637 0 0
+/content/node/396/devel 1 68036 0 0
+/content/search/node/abuse%20sex%20type%3Aarticle 1 22821 0 0
+/content/search/node/dope 1 21941 0 0
+/content/api/taxonomy_term/article 1 57 0 0
+/content/admin/structure/views/ajax/config-item-extra/ask_an_expert/services_1/filter/tid 5 122404 0 0
+/content/api/taxonomy_term/405 3 2148 0 0
+/content/admin/structure/views/ajax/add-item/ask_an_expert/services_1/filter 2 98747 0 0
+/content/api/taxonomy_vocabulary/getTree+9 1 57 0 0
+/content/admin/structure/types/manage/csp-location/fields 1 27835 0 0
+/content/node 4 133312 0 0
+/content/api/taxonomy_vocabulary/gettree 1 57 0 0
+/content/api/taxonomy_vocabulary/retrieve 6 342 0 0
+/content/api/taxonomy_vocabulary/getTree 8 456 0 0
+/content/admin/structure/taxonomy/divorce 1 12837 0 0
+/content/admin/structure/taxonomy/article/edit 1 13581 0 0
+/content/admin/structure/types/manage/article/fields 4 151292 0 0
+/content/api/taxonomy_term/vocabulary 1 57 0 0
+/content/content/adopted-daughter-wants-answers-about-her-birth-family 1 21689 0 0
+/content/admin/structure/views/ajax/display/ask_an_expert/services_1/pager_options 3 77296 0 0
+/content/api/taxonomy_term/getTree 2 114 0 0
+/content/admin/structure/taxonomy/audio%20files 1 13048 0 0
+/content/node/945/devel 2 108850 0 0
+/content/search/node/abuse 3 89035 0 0
+/content/api/taxonomy_term/267 3 2181 0 1
+/content/search/node/abuse%20type%3Aarticle 1 29261 0 0
+/content/search/node/drugs%20with%20kids 1 28171 0 0
+/content/admin/structure/taxonomy 4 103424 0 0
+/content/admin/structure/views/ajax/config-item/article/services_1/field/php_1 3 132387 0 0
+/content/admin/structure/types/manage/cspitem/fields 1 29304 0 0
+END_SIDER

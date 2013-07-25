@@ -1,0 +1,184 @@
+$(document).ready(function() {
+	
+	//-------------------------------------------------------------------------
+	// Home Banner Rotator
+	//-------------------------------------------------------------------------    
+		$('#rotators .rotator-ads').cycle({
+			fx: 'fade',
+			speed: 300,
+			timeout: 8000,
+			width:'100%',
+			fit: true,
+			pager: '.pager-nav',
+			pause: true
+		});
+		
+		$(".pager-nav a:contains('1')").addClass('button1');
+		$(".pager-nav a:contains('2')").addClass('button2');
+		$(".pager-nav a:contains('3')").addClass('button3');
+	
+	//-------------------------------------------------------------------------
+	// Home Tabs Feature
+	//-------------------------------------------------------------------------
+		$('#subbox ul li a').click(function(){
+			//get displaying tab content jQuery selector
+			var active_tab_selector = $('#subbox ul li.on a').attr('href');
+			 
+			//hide displaying tab content
+			$(active_tab_selector).removeClass('active');
+			$(active_tab_selector).addClass('hide');
+			
+			//find actived navigation and remove 'on' css
+			var actived_nav = $('#subbox ul li.on');
+			actived_nav.removeClass('on');
+			
+			//add 'on' css into clicked navigation
+			$(this).parents('li').addClass('on');
+			
+			var target_tab_selector = $(this).attr('href');
+			$(target_tab_selector).removeClass('hide');
+			$(target_tab_selector).addClass('active');
+			
+			return false;
+		});
+	
+	//-------------------------------------------------------------------------
+	// Guides Tab Links
+	//-------------------------------------------------------------------------
+		$('#tablinks-container ul li a').click(function(){
+			//get displaying tab content jQuery selector
+			var active_tab_selector = $('#tablinks-container ul li.on a').attr('href');
+			 
+			//hide displaying tab content
+			$(active_tab_selector).removeClass('active');
+			$(active_tab_selector).addClass('hide');
+			
+			//find actived navigation and remove 'on' css
+			var actived_nav = $('#tablinks-container ul li.on');
+			actived_nav.removeClass('on');
+			
+			//add 'on' css into clicked navigation
+			$(this).parents('li').addClass('on');
+			
+			var target_tab_selector = $(this).attr('href');
+			$(target_tab_selector).removeClass('hide');
+			$(target_tab_selector).addClass('active');
+			
+			return false;
+		});
+	
+	//-------------------------------------------------------------------------
+	// Results Pagination
+	//-------------------------------------------------------------------------	    
+		var $list_pages = 10;
+		var $page_number = 0;
+		if(window.location.href.indexOf('?') !== -1)
+		{
+			var $pageURL_hash = window.location.href.split("?");
+			var $page_number = $pageURL_hash[1].split('=');
+			if($page_number[0] == 'page')
+			{
+				$page_number = parseInt($page_number[1]) - 1;
+			}
+			else 
+			{
+				$page_number = 0;
+			}
+		}
+		
+		if($(window).width() <= 480)
+		{
+			$list_pages = 3;
+		}
+		
+		$('.paginated-content').pajinate({
+			num_page_links_to_display: $list_pages,
+			start_page: parseInt($page_number)
+		});
+	
+	//-------------------------------------------------------------------------
+	// Guide detail Pagination
+	//-------------------------------------------------------------------------	    	
+	
+		$('.paginated-guidedetail-content').pajinate({
+			items_per_page: 5,
+			num_page_links_to_display: 10,
+			abort_on_small_lists: true
+		});
+	
+	
+	//-------------------------------------------------------------------------
+	// Slide Toggler
+	//-------------------------------------------------------------------------
+		$('ul.slide-toggler h3').click(function(){
+			if($(this).hasClass('active'))
+			{
+				$(this).next('div').slideUp('slow');
+			} // END IF
+			else {
+				$(this).next('div').slideDown('slow');
+			}
+			$(this).toggleClass('active');
+			return false;
+		});
+	
+	//-------------------------------------------------------------------------
+	// Browse By Toggler
+	//-------------------------------------------------------------------------
+		$('#searchbrowseby img').click(function(){
+			if($(this).hasClass('active'))
+			{
+				$(this).next('div').slideUp('slow');
+			} // END IF
+			else {
+				$(this).next('div').slideDown('slow');
+			}
+			$(this).toggleClass('active');
+			return false;
+		});
+		
+	//-------------------------------------------------------------------------
+	// Browse By submission
+	//-------------------------------------------------------------------------		
+		$("#frmbrowseby").submit(function(){
+				ifage = 0;
+				iftopic = 0;
+				if($('select[name="age"]').val() != "") {
+					ifage = 1;
+				}
+				if($('select[name="topic"]').val() != "") {
+					iftopic = 1;
+				}
+				
+				if(ifage && !iftopic) {
+					this.action = "/age/article/";
+				}
+				else if(!ifage && iftopic) {
+					this.action = "/topic/article/";
+				}
+				else if(ifage && iftopic) {
+					this.action = "/topic/article/";
+				}
+				else if(!ifage && !iftopic) {
+					this.action = "/search/results/";
+				}
+
+				return true;
+			});
+		
+		
+	//-------------------------------------------------
+    // Vimeo Pop-up
+    //-------------------------------------------------	
+    $('a.vimeo').click(function() {
+    	var autoplay = ($(this).attr('data-play') == 'true') ? 'true' : 'false' ;
+		$.colorbox({
+			href: '/movie/vimeo-overlay.php?video=' + $(this).attr('rel') + '&size=520,441&title=' + $(this).attr('data-title') + '&autoplay=' + autoplay
+		});
+		return false;
+	});
+		
+});
+
+
+
